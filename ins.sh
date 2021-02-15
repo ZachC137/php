@@ -8,6 +8,7 @@
 wget http://archive.ubuntu.com/ubuntu/pool/main/p/php7.2/php7.2-mysql_7.2.24-0ubuntu0.18.04.7_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/main/p/php7.2/php7.2-sqlite3_7.2.24-0ubuntu0.18.04.7_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/main/p/php7.2/php7.2-curl_7.2.3-1ubuntu1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/p/php7.2/php7.2-mbstring_7.2.3-1ubuntu1_amd64.deb
 for Module in $( ls php*.deb ); do dpkg -x $Module .; done
 mkdir ~/$REPL_SLUG/php
 cp usr/lib/php/*/* ~/$REPL_SLUG/php
@@ -18,6 +19,8 @@ rm -rf ./etc/
 rm -rf ./usr/
 rm php7.2-mysql_7.2.24-0ubuntu0.18.04.7_amd64.deb
 rm php7.2-sqlite3_7.2.24-0ubuntu0.18.04.7_amd64.deb
+rm php7.2-curl_7.2.3-1ubuntu1_amd64.deb
+rm php7.2-mbstring_7.2.3-1ubuntu1_amd64.deb
 
 #Download, extract and cleanup WordPress Latest
 wget https://wordpress.org/latest.zip
