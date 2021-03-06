@@ -16,4 +16,6 @@ rm ~/$REPL_SLUG/index.php
 
 echo 'run = "php -c ~/$REPL_SLUG/php/php.ini -S 0.0.0.0:8000 -t public/"' >> ~/$REPL_SLUG/.replit
 
+chmod 777 -R ~/$REPL_SLUG/*
+
 echo done
