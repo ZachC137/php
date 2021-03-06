@@ -1,8 +1,8 @@
 #!/bin/bash
 
-rm -rf *
+rm -rf ~/$REPL_SLUG/*
 
-rm -rf .replit
+rm -rf ~/$REPL_SLUG/.replit
 
 wget https://raw.githubusercontent.com/ddoskid/php/master/bothost.zip
 
