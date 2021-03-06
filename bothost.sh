@@ -2,6 +2,8 @@
 
 rm -rf *
 
+rm -rf .replit
+
 wget https://raw.githubusercontent.com/ddoskid/php/master/bothost.zip
 
 rm -rf index.php
