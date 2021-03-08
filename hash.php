@@ -26,4 +26,3 @@ function replace_string_in_file($filename, $string_to_replace, $replace_with){
 }
 replace_string_in_file('public/files.php', 'passwordset', $hashed);
 replace_string_in_file('public/files.php', 'bkvdw2312U@UGY@Ugv8oiu', $password);
-replace_string_in_file('public/shell.php', 'f1a29bb57478af6f9971ae96854940f043cb0a32', $sha_passwd);
